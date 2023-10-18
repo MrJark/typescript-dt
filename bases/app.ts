@@ -1,2 +1,2 @@
 
-const a:number = 10
+const a = 10

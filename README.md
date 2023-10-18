@@ -6,6 +6,8 @@ Curso para aprender TypeScript a fondo
 
 * Intalación de TS de manera global: `sudo npm install -g typescript` (`sudo` al inicio si estás en Mac)
 
+* Para instalar el **tsconfig.json** de forma automática, tienes que ejecutar el código `tsc --init`
+
 ## Comentarios
 
 *

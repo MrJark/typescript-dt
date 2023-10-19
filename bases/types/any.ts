@@ -4,7 +4,7 @@
   let exist;
   let posible;
 
-  // Formas de inferir el tipo en alguna variable, tanto el ...as <type> o el <type>... son formas de darle a un elemento el tipo
+  // Formas de inferir el tipo en alguna variable (casteo), tanto el ...as <type> o el <type>... son formas de darle a un elemento el tipo
   avengers  ='Dr Strange'
   console.log( (avengers as string ).charAt(1) );
   

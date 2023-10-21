@@ -6,6 +6,7 @@ dist/
 .DS_Store
 
 **/*.js
+*.js
 
 #package-lock
 .package-lock

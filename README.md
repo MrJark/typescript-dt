@@ -15,3 +15,5 @@ Curso para aprender TypeScript a fondo
 * Si mantinees algun elemento con el tipo _any_ no podras usar el autocompletado al colocar el punto para applicarle cualquier método. por tanto, es casi obligatorio no usarlo (salvo excepciones para un momento rápido y ya luego hacerlo bien)
 
 * En TS una propiedad opcional no puede tener detrás de ella, siguiéndola, una propiedad obligatoria. Por ejemplo en los args de las funciones, deben ser las opcionales siempre las últimas
+
+* En las funciones el orden de las proiedade **SÍ** importarta mientras que en los objetos **NO**

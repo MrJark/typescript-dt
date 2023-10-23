@@ -1,66 +1,39 @@
-(() => {
+// Funciones Básicas
+//* Task: poner tipos
+function sumar( a: number, b: number ): number{
+  return a + b;
+}
 
-    // Tipos
-    const batman: string = 'Bruce';
-    const superman: string = 'Clark';
-  
-    const existe: boolean = false;
-  
-    // Tuplas
-    const parejaHeroes: [
-      string, 
-      string
-    ] 
-    = [
-        batman,
-        superman
-      ];
+const contar = ( heroes:string ):number => {
+  return heroes.length;
+}
+const superHeroes: string[] = ["Flash", "Arrow", "Superman", "Linterna Verde"];
+contar(superHeroes.join(","));
 
-    const villano: [
-      string, 
-      number, 
-      boolean
-    ] = [
-      'Lex Lutor',
-      5,
-      true
-    ];
-  
-    // Arreglos
-    const aliados:string[] = ['Mujer Maravilla','Acuaman','San', 'Flash'];
-  
-    //Enumeraciones
-    enum Power {
-      fuerzaAcuaman = 0, // o fuerzaAcuaman, sin nada más por la posición
-      fuerzaBatman = 1,
-      fuerzaFlash = 5,
-      fuerzaSuperman = 100,
-    }
-    const fuerzaFlash: Power = 5;
-    const fuerzaSuperman:Power = 100;
-    const fuerzaBatman: Power = 1;
-    const fuerzaAcuaman: Power = 0;
-    // otra forma de hacerlo ( asignando en la enumeración un nombre y dárselo )
-    const fuerzaFlash2: Power.fuerzaFlash = 5;
-    const fuerzaSuperman2:Power .fuerzaSuperman= 100;
-    const fuerzaBatman2: Power.fuerzaBatman = 1;
-    const fuerzaAcuaman2: Power.fuerzaAcuaman = 0;
-  
-    // Retorno de funciones
-    function activar_batiseñal(): string {
-      return 'activada';
-    }
-  
-    function pedir_ayuda(): undefined | void {
-      console.log('Auxilio!!!');
-    }
-  
-    // Aserciones de Tipo
-    const poder: any = '100';
-    const largoDelPoder:number = poder.length;
-    console.log( largoDelPoder );
-  
-  
-  })()
-  
-  
+//Parametros por defecto
+const llamarBatman = ( llamar?: boolean ): void => {
+  if( llamar ){
+    console.log("Batiseñal activada");
+  }
+}
+
+llamarBatman();
+
+// Rest?
+const unirheroes = ( ...personas: string[] ):string => {
+  return personas.join(", ");
+}
+
+
+// Tipo funcion
+const noHaceNada = ( numero: number, texto: string, booleano: boolean, arreglo: string[] )=> {}
+
+// Crear el tipo de funcion que acepte la funcion "noHaceNada"
+interface NadaDeNada {
+  numero: number, 
+  texto: string, 
+  booleano: boolean, 
+  arreglo: string[]
+}
+type NoHaceNada = ({numero, texto, booleano, arreglo}: NadaDeNada) => void
+let noHaceNadaTampoco: NoHaceNada;

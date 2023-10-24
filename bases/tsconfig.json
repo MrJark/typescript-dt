@@ -109,5 +109,7 @@
   "exclude": [
     "node_modules"
   ],
-  // "include": []
+  "include": [
+    "ES6" // con esto haces qeu solo se muestren los archivos que estén en la carpeta ES6, los demás los ignora
+  ]
 }

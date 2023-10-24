@@ -8,5 +8,8 @@ dist/
 **/*.js
 *.js
 
+**/*.js.map
+*.js.map
+
 #package-lock
 .package-lock

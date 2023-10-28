@@ -110,6 +110,7 @@
     "node_modules"
   ],
   "include": [
-    "ES6" // con esto haces qeu solo se muestren los archivos que estén en la carpeta ES6, los demás los ignora
+    // "ES6" // con esto haces qeu solo se muestren los archivos que estén en la carpeta ES6, los demás los ignora
+    "interfaces" // solo para la caprta interfaces
   ]
 }

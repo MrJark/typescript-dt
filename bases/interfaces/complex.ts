@@ -4,7 +4,8 @@
   interface Client { // si los elementos de las interfaces tienen más de un nivel, com es el address, es buena práctica hacer una nueva interface y añadir una nueva y mandarla a la principal
     name: string,
     age?: number,
-    address: Address
+    address: Address,
+    getFullAdress?(id: string): string
   }
 
   interface Address {
@@ -20,6 +21,9 @@
       zip: '003301',
       id: 345678,
       city: 'Alicante'
+    },
+    getFullAdress( id = 'Barcelona') {
+      return `Vivo en ${id}`
     }
   }
 

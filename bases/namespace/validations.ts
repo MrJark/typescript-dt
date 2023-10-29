@@ -1,0 +1,4 @@
+
+namespace Validations {
+  const validateText()
+}

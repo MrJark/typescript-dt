@@ -14,3 +14,4 @@ export function genericFuntion<T> (args: T ) {
 }
 
 export const genericFuntionArrow = <T> (args: T) => args // est ay la de arriba son la misma pero en arrow
+

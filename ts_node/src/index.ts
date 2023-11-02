@@ -46,6 +46,6 @@
 import { getPokemons } from "./generics/get_poke";
 
 getPokemons(151)
-  .then( resp => console.log(resp) )
+  .then( pokemon => console.log(pokemon.sprites.back_default) )
   .catch( err => console.log(err))
   .finally(() => 'Final del getPokemon')

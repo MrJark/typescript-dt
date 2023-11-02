@@ -9,6 +9,7 @@
 
 
 
+
 // const ironman = new Hero('Ironman', 1, 55)
 // const ironman2 = new Patatas('Ironman', 1, 55)
 // const ironman3 = new TDOD.Her4('Ironman', 1, 55)
@@ -33,19 +34,27 @@
 
 
 // const deadpool = {
-  //   name: 'Deadpool',
-  //   realNamne: 'Wade Winston Wilson',
-  //   dangerLevel: 130,
-  // }
-  
-  // console.log( genericFuntionArrow<Villain>(deadpool).dangerLevel);
-  
-  //_________________
-  
+//   name: 'Deadpool',
+//   realNamne: 'Wade Winston Wilson',
+//   dangerLevel: 130,
+// }
 
-import { getPokemons } from "./generics/get_poke";
+// console.log( genericFuntionArrow<Villain>(deadpool).dangerLevel);
 
-getPokemons(151)
-  .then( pokemon => console.log(pokemon.sprites.back_default) )
-  .catch( err => console.log(err))
-  .finally(() => 'Final del getPokemon')
+//_________________
+
+
+// import { getPokemons } from "./generics/get_poke";
+
+
+// getPokemons(151)
+//   .then( pokemon => console.log(pokemon.sprites.back_default) )
+//   .catch( err => console.log(err))
+//   .finally(() => 'Final del getPokemon')
+  
+//_________________
+import { Pokemon } from "./decorators/pokemon_dec";
+
+
+const mew = new Pokemon('Mew')
+console.log(mew);

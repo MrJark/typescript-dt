@@ -45,10 +45,28 @@ function CheckValidPokemonId() {
   }
 }
 
+// decorador para solo leer la url y no cambiarla
+function readOnly (isWritable: boolean = true ): Function{
+  return function( target: any, propertyKey: string) { //! no recibe el descriptor porque estamos decorando una propiedad y no un método
+    const descriptor: PropertyDecorator = {
+      // get() {
+
+      //   return 'fer'
+      // },
+      // set(){
+
+      // }
+    }
+    return descriptor
+  }
+}
+
 // puedo colocar tantos decoradores como quiera y se ejecutan de forma secuencial en transpolacion/compolación
 @blockPrototype
 @printToConsoleCondifional()
 export class Pokemon {
+
+  @readOnly() // para solo lectura
   public publicApi: string = 'https://pokeapi.co'
 
   constructor(
